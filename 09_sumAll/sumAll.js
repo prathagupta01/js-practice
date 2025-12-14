@@ -4,9 +4,11 @@ const sumAll = function(init,endy) {
     if(init < 0 || endy < 0) return 'ERROR'
     if(!Number.isInteger(init) || !Number.isInteger(endy))return 'ERROR'
     if(init > endy){
-        let temp = endy
-        endy = init 
-        init = temp
+        // can use the destructuring assignment to swap values (array destructuring)
+        // let temp = endy
+        // endy = init 
+        // init = temp
+        [init ,endy] = [endy,init]
     }
     for(let i = init;i<= endy;i++){
             sum += i;
