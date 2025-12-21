@@ -28,5 +28,5 @@ module.exports = {
   birthYear: typeof birthYear === 'undefined' ? undefined : birthYear,
   greeting: typeof greeting === 'undefined' ? undefined : greeting,
   fullName: typeof fullName === 'undefined' ? undefined : fullName,
-  age: typeof age === 'undefined' ? undefined : age
+  age: typeof age === 'undefined' ? undefined : age //This line checks if the variable age is undefined. If it is, it sets the value to undefined; otherwise, it sets it to the value of age. This is useful for exporting variables in Node.js modules to avoid ReferenceErrors if the variable was never defined. In your file, it ensures that age is either its calculated value or undefined if not set.
 }
