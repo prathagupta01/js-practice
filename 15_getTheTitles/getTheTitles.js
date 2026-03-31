@@ -4,6 +4,8 @@ const getTheTitles = function(obj) {
         arratitles.push(obj[i].title);
     }
     return arratitles;
+
+    //return obj.map((book) => book.title);
 };
 
 // Do not edit below this line
